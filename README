@@ -1,0 +1,24 @@
+=====================================
+
+           Budget Helper For Android
+			  
+		Borys H.N.
+		2.19.13
+		
+=====================================
+	
+Pre-Requisites! 
+1) Eclipse IDE, and appropriate android SDKs.
+2) A handy access to android API
+3) This build is for android 2.3.3
+   
+Instructions...
+*once you've already done pre-requisites
+1) Compile and Run!
+
+For the future...
+(!) This one is not even half done. wahh.
+(!) It got out of scope pretty quickly. Poor initial planning.
+(!) The framework might look at a bit scrappy, it needs some tuning.
+(!) Finally finish calendar porption with data analaysis. 
+*The initial point of the app was a quick budget helper, it grew...a little.
