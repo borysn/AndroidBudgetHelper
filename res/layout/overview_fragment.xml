@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="5dp"
+    android:paddingLeft="5dp" >
+
+    <!-- budget name -->
+    <TextView
+        android:id="@+id/budgetNameDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/budgetNameDisplay" />
+    <TextView 
+        android:id="@+id/budgetName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/budgetNameDisplay"
+        android:textColor="@color/welcomeTextColor" 
+        android:paddingLeft="5dp"/>
+    <!-- budget duration -->
+    <TextView
+        android:id="@+id/budgetDurationDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/budgetNameDisplay"
+        android:text="@string/budgetDurationDisplay"
+        android:paddingTop="15dp" />
+    <TextView 
+        android:id="@+id/budgetDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/budgetDurationDisplay"
+        android:layout_below="@+id/budgetNameDisplay"
+        android:textColor="@color/welcomeTextColor" 
+        android:paddingLeft="5dp"
+        android:paddingTop="15dp"/>
+    <!-- budget start date -->
+    <TextView
+        android:id="@+id/budgetStartDateDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/budgetDurationDisplay"
+        android:text="@string/budgetStartDateDisplay"
+        android:paddingTop="15dp" /> 
+    <TextView 
+        android:id="@+id/budgetStartDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/budgetStartDateDisplay"
+        android:layout_below="@+id/budgetDurationDisplay"
+        android:textColor="@color/welcomeTextColor"
+        android:paddingLeft="5dp" 
+        android:paddingTop="15dp"/>
+    <!-- budget end date 
+    <TextView
+        android:id="@+id/budgetEndDateDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/budgetStartDateDisplay"
+        android:text="@string/budgetEndDateDisplay" />
+    <TextView 
+        android:id="@+id/budgetEndDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/budgetEndDateDisplay"
+        android:layout_below="@+id/budgetStartDateDisplay"
+        android:textColor="@color/welcomeTextColor"
+        android:paddingLeft="5dp" /> -->
+   <!-- budget income totals -->
+       <TextView
+        android:id="@+id/budgetIncomeTotalDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/budgetStartDateDisplay"
+        android:text="@string/budgetIncomeTotalDisplay"
+        android:paddingTop="15dp" />
+       <TextView
+        android:id="@+id/budgetIncomeTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/budgetStartDateDisplay" 
+        android:layout_toRightOf="@+id/budgetIncomeTotalDisplay"
+        android:text="@string/addIncomeDialogText" 
+        android:paddingLeft="5dp"
+        android:paddingTop="15dp"
+        android:textColor="@color/welcomeTextColor" />
+   <!-- budget expense totals -->
+       <TextView
+        android:id="@+id/budgetExpenseTotalDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/budgetIncomeTotalDisplay"
+        android:text="@string/budgetExpenseTotalDisplay" />
+       <TextView
+        android:id="@+id/budgetExpenseTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/budgetIncomeTotalDisplay"
+        android:layout_toRightOf="@+id/budgetExpenseTotalDisplay" 
+        android:text="@string/addExpenseDialogText" 
+        android:paddingLeft="5dp"
+        android:textColor="@color/welcomeTextColor"/>
+</RelativeLayout>
