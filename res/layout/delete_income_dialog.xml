@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="vertical"
+    android:padding="5dp" >
+    <TextView 
+        android:id="@+id/askForOkToDeleteIncome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/askForOkToDeleteIncome"/>
+     <LinearLayout 
+        android:id="@+id/buttonBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+	    <Button
+	        android:id="@+id/deleteIncomeOkButton"
+	        android:layout_width="100dp"
+	        android:layout_height="wrap_content"
+	        android:text="@string/okButtonText"
+	        android:layout_marginTop="10dp" />
+	    <Button
+	        android:id="@+id/deleteIncomeCancelButton"
+	        android:layout_width="100dp"
+	        android:layout_height="wrap_content"
+	        android:text="@string/addIncomeCancelText"
+	        android:layout_marginTop="10dp" />
+	 </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="275dp"
+    android:layout_height="250dp"
+    android:orientation="vertical"
+    android:layout_gravity="center" 
+    android:paddingLeft="5dp"
+    android:paddingTop="5dp">
+    <TextView 
+        android:id="@+id/askForBudgetStartDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="@string/askForBudgetStartDate"
+        android:textColor="@color/welcomeTextColor" />
+    <DatePicker
+        android:id="@+id/budgetStartDatePicker"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="6sp" />
+   <!--  <TextView 
+        android:id="@+id/askForBudgetEndDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="@string/askForBudgetEndDate"
+        android:textColor="@color/welcomeTextColor"
+        />
+     
+    <DatePicker
+        android:id="@+id/budgetEndDatePicker"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="6sp" />-->
+	<LinearLayout 
+	       android:id="@+id/buttonBar"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:orientation="horizontal"> 
+	    <Button 
+	        android:id="@+id/backBudgetCreatorButton"
+	        android:layout_width="100dp"
+	        android:layout_height="wrap_content"
+	        android:text="@string/backButtonText"
+	        android:layout_marginTop="10dp" />
+	    <Button
+	        android:id="@+id/continueBudgetCreatorButton"
+	        android:layout_width="100dp"
+	        android:layout_height="wrap_content"
+	        android:text="@string/continueButton"
+	        android:layout_marginTop="10dp" />
+	</LinearLayout>
+</LinearLayout>

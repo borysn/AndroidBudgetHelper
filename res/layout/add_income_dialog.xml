@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="275dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:padding="5dp"
+    android:layout_gravity="left">
+    
+    <!-- Income Name -->
+    <TextView 
+        android:id="@+id/incomeNameDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/askForIncomeName" />
+	<EditText 
+	    android:id="@+id/incomeName"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/insertBudgetNameHint"
+        android:text="new income"/>
+	<!-- Income value -->
+    <TextView 
+        android:id="@+id/incomeValueDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/askForIncomeValue" />
+	<EditText 
+	    android:id="@+id/incomeValue"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/dollarSign"
+        android:inputType="numberDecimal" 
+        android:text="1500"/>
+	<!-- Income Recurrent -->
+    <TextView 
+        android:id="@+id/incomeRecurrenceDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/askForIncomeRecurrence" />
+    <Spinner 
+        android:id="@+id/incomeRecurrence"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:entries="@array/recurrenceStringArray" />
+    <LinearLayout 
+        android:id="@+id/buttonBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+	    <Button
+	        android:id="@+id/addIncomeButton"
+	        android:layout_width="100dp"
+	        android:layout_height="wrap_content"
+	        android:text="@string/continueButton"
+	        android:layout_marginTop="10dp" />
+	    <Button
+	        android:id="@+id/addIncomeCancelButton"
+	        android:layout_width="100dp"
+	        android:layout_height="wrap_content"
+	        android:text="@string/addIncomeCancelText"
+	        android:layout_marginTop="10dp" />
+	 </LinearLayout>
+</LinearLayout>
